@@ -84,7 +84,7 @@ a img {
 }
 
 @media (max-width: 768px) {
-  #root .nav-menu {
+  #root nav .nav-menu {
     position: fixed;
     left: -100%;
     top: 5rem;
@@ -101,24 +101,24 @@ a img {
     -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-  #root .nav-menu .nav-item {
+  #root nav .nav-menu .nav-item {
     margin: 2.5rem 0;
   }
-  #root .nav-menu.active {
+  #root nav .nav-menu.active {
     left: 0;
   }
-  #root .hamburger {
+  #root nav .hamburger {
     display: block;
     cursor: pointer;
   }
-  #root .hamburger.active .bar:nth-child(2) {
+  #root nav .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  #root .hamburger.active .bar:nth-child(1) {
+  #root nav .hamburger.active .bar:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(45deg);
             transform: translateY(8px) rotate(45deg);
   }
-  #root .hamburger.active .bar:nth-child(3) {
+  #root nav .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
             transform: translateY(-8px) rotate(-45deg);
   }
