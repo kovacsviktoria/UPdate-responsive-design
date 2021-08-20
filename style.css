@@ -23,8 +23,14 @@ a img {
 }
 
 /*reset end*/
+#root {
+  color: white;
+  font-family: 'Urbanist', sans-serif;
+  letter-spacing: 0.08rem;
+}
+
 #root nav {
-  height: 5rem;
+  height: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,14 +41,31 @@ a img {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 1.5rem;
-  background-color: #e8f5f3;
-  border-bottom: 1px solid #E2E8F0;
+  background-color: #000;
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 #root nav .nav-logo {
+  height: 100px;
+  width: 100%;
   font-size: 2.1rem;
   font-weight: 500;
-  color: #475569;
+  color: #ef0081;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root nav .nav-logo::before {
+  content: "";
+  background-image: url("./images/up-arrow.png");
+  background-size: cover;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
 }
 
 #root nav .nav-menu {
@@ -64,11 +87,11 @@ a img {
 #root nav .nav-menu .nav-item .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #475569;
+  color: #ef0081;
 }
 
 #root nav .nav-menu .nav-item .nav-link:hover {
-  color: #dcdde2;
+  color: #fff;
 }
 
 #root nav .hamburger {
@@ -82,7 +105,7 @@ a img {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: #ef0081;
 }
 
 #root header {
@@ -102,7 +125,7 @@ a img {
 #root header #left-side {
   width: 50%;
   height: 100%;
-  background-color: aqua;
+  border: 1px solid #ef0081;
   position: relative;
   overflow: hidden;
 }
@@ -128,6 +151,7 @@ a img {
 
 #root header #left-side #headline-container {
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,33 +166,77 @@ a img {
   top: 0;
   left: 0;
   padding: 20px;
-  color: white;
+}
+
+#root header #left-side #headline-container #top-source-name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2px;
+  font-weight: 500;
+  color: #000;
+  background-color: #00efd1;
+}
+
+#root header #left-side #headline-container h3 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+#root header #left-side #headline-container .author {
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+#root header #left-side #headline-container .author::before {
+  content: "Author: ";
 }
 
 #root header #right-side {
   width: 50%;
   height: 100%;
   padding: 20px;
-  background-color: bisque;
+  color: #000;
+  background-color: #ef0081;
+  background: linear-gradient(333deg, #ef0081 30%, #00efd1 82%);
+}
+
+#root header #right-side h1 {
+  padding-bottom: 2rem;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 3rem;
+}
+
+#root header #right-side p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+#root header #right-side p span {
+  font-weight: 700;
+  line-height: 5rem;
 }
 
 @media (max-width: 768px) {
   #root nav .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 8rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #fff;
+    background-color: #000;
     width: 100%;
-    border-radius: 10px;
+    border-top: 1px solid #ef0081;
     text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 10;
   }
   #root nav .nav-menu .nav-item {
     margin: 2.5rem 0;
