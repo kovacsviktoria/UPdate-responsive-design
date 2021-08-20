@@ -110,6 +110,7 @@ a img {
             border: 1px solid #ef0081;
             position: relative;
             overflow:hidden; //levagja a divbol kilogo tartalmat
+            background-color: #000000;
 
             picture{
                 width: 100%;
@@ -148,11 +149,11 @@ a img {
                     font-size: 1.3rem;
                     line-height: 2rem;
                     text-transform: uppercase;
-                    background-color: rgba(0, 0, 0, 0.329);
+                    background-color: rgba(0, 0, 0, 0.4);
                 }
 
                 .author{
-                    background-color: rgba(0, 0, 0, 0.329);
+                    background-color: rgba(0, 0, 0, 0.4);
 
                     &::before{
                         content: "Author: ";
@@ -165,6 +166,9 @@ a img {
             width:50%;
             height: 100%;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             color: #000;
             background-color: #ef0081;
             background: linear-gradient(333deg, rgba(239,0,129,1) 30%, rgba(0,239,209,1) 82%);
@@ -177,12 +181,12 @@ a img {
 
             p {
                 font-size: 1.5rem;
-                line-height: 3rem;
+                line-height: 2.5rem;
                 font-weight: 500;
 
                 span{
                     font-weight: 700;
-                    line-height: 5rem;
+                    line-height: 4.5rem;
 
                 }
             }

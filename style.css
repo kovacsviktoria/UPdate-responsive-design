@@ -128,6 +128,7 @@ a img {
   border: 1px solid #ef0081;
   position: relative;
   overflow: hidden;
+  background-color: #000000;
 }
 
 #root header #left-side picture {
@@ -182,11 +183,11 @@ a img {
   font-size: 1.3rem;
   line-height: 2rem;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.329);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #root header #left-side #headline-container .author {
-  background-color: rgba(0, 0, 0, 0.329);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #root header #left-side #headline-container .author::before {
@@ -197,6 +198,16 @@ a img {
   width: 50%;
   height: 100%;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #000;
   background-color: #ef0081;
   background: linear-gradient(333deg, #ef0081 30%, #00efd1 82%);
@@ -210,13 +221,13 @@ a img {
 
 #root header #right-side p {
   font-size: 1.5rem;
-  line-height: 3rem;
+  line-height: 2.5rem;
   font-weight: 500;
 }
 
 #root header #right-side p span {
   font-weight: 700;
-  line-height: 5rem;
+  line-height: 4.5rem;
 }
 
 @media (max-width: 768px) {
