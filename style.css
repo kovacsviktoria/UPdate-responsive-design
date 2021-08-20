@@ -24,6 +24,7 @@ a img {
 
 /*reset end*/
 #root nav {
+  height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,6 +36,7 @@ a img {
           align-items: center;
   padding: 1rem 1.5rem;
   background-color: #e8f5f3;
+  border-bottom: 1px solid #E2E8F0;
 }
 
 #root nav .nav-logo {
@@ -81,6 +83,73 @@ a img {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
+}
+
+#root header {
+  height: 25rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root header #left-side {
+  width: 50%;
+  height: 100%;
+  background-color: aqua;
+  position: relative;
+  overflow: hidden;
+}
+
+#root header #left-side picture {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root header #left-side picture img {
+  width: auto;
+  height: 100%;
+}
+
+#root header #left-side #headline-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  color: white;
+}
+
+#root header #right-side {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  background-color: bisque;
 }
 
 @media (max-width: 768px) {
