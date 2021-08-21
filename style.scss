@@ -238,5 +238,142 @@ a img {
                 transform: translateY(-8px) rotate(-45deg);
             }
         }
+
+        header{
+    
+            #left-side{
+                width: 60%;
+                
+                #headline-container{
+                    h2{
+                        font-size: 1.3rem;
+                    }
+
+                    #top-source-name{
+                        font-size: 0.8rem;
+                    }
+    
+                    h3{
+                        font-size: 1rem;
+                        line-height: 1.7rem;
+                    }
+    
+                    .author{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+    
+            #right-side{
+                width:40%;
+                padding: 20px;
+                
+                h1{
+                    padding-bottom: 1.5rem;
+                    font-size: 2.2rem;
+                }
+    
+                p {
+                    font-size: 1rem;
+                    line-height: 2rem;
+    
+                    span{
+                        line-height: 4rem;
+                    }
+                }
+            }
+        }
     }
+}
+
+@media (max-width: 480px) {
+    #root{
+
+        nav{
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 8rem;
+                flex-direction: column;
+                background-color: #000;
+                width: 100%;
+                border-top: 1px solid #ef0081;
+                text-align: center;
+                transition: 0.3s;
+                z-index: 10;
+        
+                .nav-item {
+                    margin: 2rem 0;
+                }
+            }
+        
+            .nav-menu.active {
+                left: 0;                
+            }
+        
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+        
+            //Hamburger ikon valtozas 3 vonalbol x-be
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+        
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+        
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+
+        header{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            #left-side{
+                width: 100%;
+                height: 20rem;
+    
+                #headline-container{
+
+                    #top-source-name{
+                        font-size: 0.6rem;
+                    }
+    
+                    h3{
+                        font-size: 0.8rem;
+                        line-height: 1.5rem;
+                    }
+    
+                    .author{
+                        font-size: 0.6rem;    
+                    }
+                }
+            }
+    
+            #right-side{
+                width:100%;
+                height: 100%;
+                
+                h1{
+                    padding-bottom: 1.5rem;
+                    font-size: 2.2rem;
+                }
+    
+                p {
+                    font-size: 1.2rem;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+    }
+    
 }
