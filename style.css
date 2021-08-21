@@ -230,6 +230,34 @@ a img {
   line-height: 4.5rem;
 }
 
+#root main {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root main h2 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 2rem;
+  line-height: 5rem;
+  border-bottom: 1px solid #00efd1;
+}
+
 @media (max-width: 768px) {
   #root nav .nav-menu {
     position: fixed;
@@ -301,9 +329,12 @@ a img {
   #root header #right-side p span {
     line-height: 4rem;
   }
+  #root main h2 {
+    font-size: 1.8rem;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   #root nav .nav-menu {
     position: fixed;
     left: -100%;
@@ -383,6 +414,9 @@ a img {
   #root header #right-side p {
     font-size: 1.2rem;
     line-height: 2.5rem;
+  }
+  #root main h2 {
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
