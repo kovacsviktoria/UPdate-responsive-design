@@ -218,52 +218,134 @@ a img {
             grid-template-columns: 25% 25% 50%;
             grid-template-rows: 33% 17% 16% 33%;
 
+            .source-name{
+                width: fit-content;
+                padding: 2px;
+            }
+            .author::before{
+                content:"Author: ";
+            }
+
             .container-small-left{
-                border: 1px solid #fff;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 grid-column-start: 1;
                 grid-column-end: 2;
                 grid-row-start: 1;
                 grid-row-end: 3;
+
+                .source-name{
+                    background-color: #ef0081;
+                }
             }
+
             .container-small-right{
-                border: 1px solid #fff;
+                width: 100%;
+                height: 100%;
                 grid-column-start: 2;
                 grid-column-end: 3;
                 grid-row-start: 1;
                 grid-row-end: 3;
+
+                .source-name{
+                    background-color: #00efd1;
+                    color: #000;
+                }
             }
+
+            .container-small-left, .container-small-right{
+                img{
+                    width: auto;
+                    height: 50%;
+                    overflow: hidden;
+                }
+
+                .news-details{
+                    width: 100%;
+                    height: 50%;
+                    padding: 20px;
+                }
+            }
+
             .container-big{
-                border: 1px solid #fff;
+                width: 100%;
+                height: 100%;
                 grid-column-start: 1;
                 grid-column-end: 3;
                 grid-row-start: 3;
                 grid-row-end: 5;
+
+                img{
+                    width: auto;
+                    height: 50%;
+                    overflow: hidden;
+                }
+
+                .source-name{
+                    background-color: #00efd1;
+                    color: #000;
+                }
             }
             .right-container-top{
-                border: 1px solid #fff;
+                width: 100%;
+                height: 100%;
                 grid-column-start: 3;
                 grid-column-end: 4;
                 grid-row-start: 1;
                 grid-row-end: 3;
+
+                img{
+                    width: auto;
+                    height: 50%;
+                    overflow: hidden;
+                }
+
+                .source-name{
+                    background-color: #ef0081;
+                }
             }
             .right-container-mid{
-                border: 1px solid #fff;
+                width: 100%;
+                height: 100%;
                 grid-column-start: 3;
                 grid-column-end: 4;
                 grid-row-start: 2;
                 grid-row-end: 4;
+
+                img{
+                    width: auto;
+                    height: 50%;
+                    overflow: hidden;
+                }
+
+                .source-name{
+                    background-color: #00efd1;
+                    color: #000;
+                }
             }
             .right-container-bottom{
-                border: 1px solid #fff;
+                width: 100%;
+                height: 100%;
                 grid-column-start: 3;
                 grid-column-end: 4;
                 grid-row-start: 4;
                 grid-row-end: 5;
+
+                img{
+                    width: auto;
+                    height: 50%;
+                    overflow: hidden;
+                }
+
+                .source-name{
+                    background-color: #ef0081;
+                }
             }
 
-            img{
-                height: 50px;
-            }
         }
 
     }
