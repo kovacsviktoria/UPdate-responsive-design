@@ -302,6 +302,7 @@ a img {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
+  border-right: 1px solid #ef0081;
 }
 
 #root main .news-grid-container .container-small-left .source-name {
@@ -345,6 +346,7 @@ a img {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 5;
+  border-top: 5px solid #ef0081;
 }
 
 #root main .news-grid-container .container-big img {
@@ -367,6 +369,8 @@ a img {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
+  border-left: 3px solid #00efd1;
+  border-bottom: 1px solid #00efd1;
 }
 
 #root main .news-grid-container .right-container-top img {
@@ -388,6 +392,8 @@ a img {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 4;
+  border-left: 3px solid #00efd1;
+  border-bottom: 1px solid #00efd1;
 }
 
 #root main .news-grid-container .right-container-mid img {
@@ -410,6 +416,7 @@ a img {
   -ms-grid-row: 4;
       grid-row-start: 4;
   grid-row-end: 5;
+  border-left: 3px solid #00efd1;
 }
 
 #root main .news-grid-container .right-container-bottom img {
